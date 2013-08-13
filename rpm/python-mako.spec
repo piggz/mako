@@ -8,7 +8,7 @@ Group: Development/Languages
 # The documentation contains javascript for search licensed BSD or GPLv2
 License: (MIT and Python) and (BSD or GPLv2)
 URL: http://www.makotemplates.org/
-Source0: mako-%{version}.tar.gz
+Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: python2-devel
 BuildRequires: python-setuptools
@@ -28,7 +28,7 @@ and flexible models available, while also maintaining close ties to Python
 calling and scoping semantics.
 
 %prep
-%setup -q -n mako-%{version}
+%setup -q -n %{name}-%{version}
 
 %build
 cd mako
@@ -50,4 +50,3 @@ rm -rf %{buildroot}
 %doc mako/CHANGES mako/LICENSE mako/README.rst
 %{_bindir}/mako-render
 %{python_sitelib}/*
-
