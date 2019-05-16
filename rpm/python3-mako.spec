@@ -1,4 +1,4 @@
-Name: python-mako
+Name: python3-mako
 Version: 0.8.1
 Release: 1
 Summary: Mako template library for Python
@@ -10,7 +10,7 @@ License: (MIT and Python) and (BSD or GPLv2)
 URL: http://www.makotemplates.org/
 Source0: %{name}-%{version}.tar.gz
 BuildArch: noarch
-BuildRequires: python2-devel
+BuildRequires: python3-devel
 BuildRequires: python-setuptools
 BuildRequires: python-markupsafe
 BuildRequires: python-beaker
